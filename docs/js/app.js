@@ -4,8 +4,8 @@
 
 const CONFIG = {
   STRIPE_PK: '',
-  GA_ID: '',
-  PIXEL_ID: '',
+  GA_ID: 'G-XXXXXXXXXX',  // TODO: Create GA4 property at analytics.google.com and replace
+  PIXEL_ID: '1049909752851124',
   API_BASE: '',
 };
 
