@@ -661,6 +661,87 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
 .legal-content a:hover { color: var(--white); }
 .legal-content strong { color: var(--white); font-weight: 500; }
 
+/* ==================== PROBLEM SECTION (Schwartz intensification) ==================== */
+.problem-section {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background: var(--black);
+}
+.problem-inner { max-width: 900px; margin: 0 auto; }
+.problem-inner .eyebrow { display: block; margin-bottom: 20px; text-align: center; }
+.problem-inner h2 { text-align: center; color: var(--white); margin-bottom: 48px; }
+.problem-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  margin-bottom: 48px;
+}
+.problem-card {
+  background: var(--dark-2); border: 1px solid rgba(255,255,255,0.06);
+  padding: 28px 32px;
+}
+.problem-quote {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 400;
+  font-style: italic; color: var(--off-white); line-height: 1.5; margin: 0;
+}
+.problem-explanation {
+  color: var(--text-mid); font-size: 0.95rem; line-height: 1.9; font-weight: 300;
+  text-align: center; max-width: 700px; margin: 0 auto 28px;
+}
+.problem-explanation strong { color: var(--white); font-weight: 500; }
+.problem-explanation em { color: var(--accent); font-style: italic; }
+.problem-punchline {
+  text-align: center; font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700;
+  color: var(--accent); margin: 0;
+}
+
+/* ==================== FUTURE PACING (Schwartz) ==================== */
+.future-pace {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background: linear-gradient(180deg, var(--dark) 0%, var(--black) 100%);
+}
+.future-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.future-inner h2 { color: var(--white); margin-bottom: 48px; }
+.future-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+  text-align: left;
+}
+.future-card {
+  background: var(--dark-2); border: 1px solid rgba(255,255,255,0.06);
+  padding: 36px;
+}
+.future-card p {
+  color: var(--text-mid); font-size: 0.95rem; line-height: 2; font-weight: 300;
+}
+.future-card p em { color: var(--accent); font-style: italic; }
+
+/* ==================== USE CTA (mid-page) ==================== */
+.use-cta {
+  text-align: center; margin-top: 56px;
+}
+.use-cta-text {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 400;
+  color: var(--off-white); margin-bottom: 24px;
+}
+
+/* ==================== CTA URGENCY ==================== */
+.cta-urgency {
+  margin-top: 28px;
+  font-size: 0.75rem; color: var(--text-dim); letter-spacing: 0.12em;
+  text-transform: uppercase; font-weight: 500;
+  font-style: italic;
+}
+
+/* ==================== FAQ H3 in question ==================== */
+.faq-question h3 {
+  font-size: 1.2rem; font-weight: 500; font-family: var(--font-display);
+  margin: 0; flex: 1; line-height: 1.3;
+}
+
+/* ==================== RESPONSIVE — NEW SECTIONS ==================== */
+@media (max-width: 768px) {
+  .problem-grid { grid-template-columns: 1fr; }
+  .future-grid { grid-template-columns: 1fr; }
+}
+
 /* ==================== ANIMATIONS ==================== */
 .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.9s var(--ease); }
 .fade-up.visible { opacity: 1; transform: translateY(0); }

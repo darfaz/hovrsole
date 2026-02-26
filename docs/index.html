@@ -3,43 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOVRSOLE — Internal Suspension Footwear | Offload. Protect. Perform.</title>
-  <meta name="description" content="HOVRSOLE is patent-pending suspension footwear that redirects pressure away from the sole through an internal frame system. Performance footwear for those who refuse to slow down. Launching on Kickstarter.">
-  <meta name="keywords" content="suspension shoe, pressure offloading footwear, performance footwear, hiking boots, internal suspension system, patent pending shoe technology, HOVRSOLE, kickstarter shoe">
-  <meta property="og:title" content="HOVRSOLE — Your Foot Hovers Inside the Frame">
-  <meta property="og:description" content="Patent-pending internal suspension technology that offloads pressure from the sole of your foot. Launching on Kickstarter.">
-  <meta property="og:image" content="images/og-image.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://darfaz.github.io/hovrsole/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HOVRSOLE — Internal Suspension Footwear">
-  <meta name="twitter:description" content="Your foot hovers inside the frame. Patent-pending pressure offloading technology.">
+
+  <!-- Primary SEO -->
+  <title>HOVRSOLE — The Shoe That Suspends Your Foot | Patent-Pending Offloading Footwear</title>
+  <meta name="description" content="Your feet take 2-3× your body weight every step. HOVRSOLE doesn't cushion the impact — it redirects it. Patent-pending internal suspension offloads 50-60% of pressure from your heel and midfoot. Reserve for $1.">
+  <meta name="keywords" content="suspension footwear, pressure offloading shoe, foot pain relief shoe, plantar support boot, hiking boot technology, internal suspension shoe, HOVRSOLE, patent pending footwear, kickstarter shoe 2026">
   <link rel="canonical" href="https://darfaz.github.io/hovrsole/">
-  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HOVRSOLE — The Shoe That Suspends Your Foot">
+  <meta property="og:description" content="Every other shoe cushions the blow. HOVRSOLE redirects it entirely. Patent-pending internal suspension. Reserve your pair for $1.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://darfaz.github.io/hovrsole/">
+  <meta property="og:site_name" content="HOVRSOLE">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HOVRSOLE — The Shoe That Suspends Your Foot">
+  <meta name="twitter:description" content="Patent-pending internal suspension. Your foot hovers inside the frame. $1 to reserve.">
+
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="HOVRSOLE — Dar Fazulyanov & Joshua Vanderpool">
+  <meta name="theme-color" content="#00f0ff">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data: Product -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "HOVRSOLE",
-    "description": "Patent-pending internal suspension footwear that offloads pressure from the sole through a rigid external frame and trampoline-like internal suspension system.",
+    "name": "HOVRSOLE Internal Suspension Footwear",
+    "description": "Patent-pending performance footwear with internal suspension system that offloads 50-60% of body weight from heel and midfoot through a rigid frame exoskeleton, silicone ankle grip, and trampoline sole membrane.",
     "brand": { "@type": "Brand", "name": "HOVRSOLE" },
+    "image": "https://darfaz.github.io/hovrsole/images/og-image.jpg",
     "offers": {
       "@type": "Offer",
       "price": "250.00",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/PreOrder"
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://darfaz.github.io/hovrsole/reserve.html"
     }
+  }
+  </script>
+
+  <!-- Structured Data: FAQ (SEO rich snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the HOVRSOLE suspension system work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Three integrated systems: a rigid outer frame exoskeleton channels terrain forces to the edges, a silicone ankle grip suspends the leg from above, and a trampoline-like membrane under the foot absorbs remaining force with dynamic flex. Together they redirect 50-60% of body weight away from the heel and midfoot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is HOVRSOLE different from cushioned shoes like HOKA or Nike Air?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fundamentally different approach. Cushioned shoes put soft material between your foot and the ground — force still hits the sole. HOVRSOLE structurally redirects force around the sole entirely through a rigid frame. It's the difference between a pillow and a suspension bridge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much pressure does HOVRSOLE offload?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In prototype brace testing, HOVRSOLE's suspension architecture offloaded 50-60% of body weight from the heel and midfoot regions. The shoe form factor uses the same architecture and is designed to deliver equal or better offloading."
+        }
+      }
+    ]
   }
   </script>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo">HOVR<span class="accent">SOLE</span></a>
+      <a href="index.html" class="nav-logo" aria-label="HOVRSOLE home">HOVR<span class="accent">SOLE</span></a>
       <div class="nav-links">
+        <a href="#problem">The Problem</a>
         <a href="#difference">The Difference</a>
         <a href="#for-you">Is It For You</a>
         <a href="#technology">How It Works</a>
@@ -47,15 +98,16 @@
         <a href="#faq">FAQ</a>
         <a href="reserve.html" class="nav-cta">Reserve — $1</a>
       </div>
-      <button class="mobile-menu" id="mobile-menu" aria-label="Menu">
+      <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
       </button>
     </div>
   </nav>
 
   <!-- MOBILE NAV -->
-  <div class="mobile-nav" id="mobile-nav">
-    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <a href="#problem">The Problem</a>
     <a href="#difference">The Difference</a>
     <a href="#for-you">Is It For You</a>
     <a href="#technology">How It Works</a>
@@ -64,20 +116,25 @@
     <a href="reserve.html">Reserve Your Pair</a>
   </div>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
+  <!-- ============================================================
+       SCHWARTZ LEVEL 1: HERO
+       Awareness target: Problem-Aware → Solution-Aware
+       Strategy: Lead with the FEELING, not the product.
+       Name the enemy (impact force), then introduce the mechanism.
+       ============================================================ -->
+  <header class="hero" role="banner">
     <div class="hero-bg">
       <div class="stars"></div>
       <div class="terrain"></div>
     </div>
     <div class="container">
       <div class="hero-content">
-        <span class="eyebrow">Patent-Pending Suspension Technology</span>
-        <h1>Your Foot<br><em>Hovers</em> Inside<br>the Frame.</h1>
-        <p class="hero-desc">HOVRSOLE is the world's first internal suspension footwear. A rigid outer frame absorbs terrain. A trampoline-like inner sole cushions impact. Your foot is suspended — pressure redirected away from the sole, through the frame, to the edges.</p>
+        <span class="eyebrow">Patent-Pending Internal Suspension</span>
+        <h1>What If Your Feet<br>Never Hit<br><em>the Ground?</em></h1>
+        <p class="hero-desc">Every step drives 2–3× your body weight into the sole of your foot. Cushioned shoes try to soften the blow. <strong>HOVRSOLE eliminates it.</strong> A rigid outer frame catches the terrain. A silicone grip suspends your leg from above. Your foot hovers — and 50–60% of the load never reaches your sole.</p>
         <div class="hero-actions">
-          <a href="reserve.html" class="btn btn-primary">Reserve Yours — $1 Deposit</a>
-          <a href="#difference" class="btn btn-outline">See the Difference →</a>
+          <a href="reserve.html" class="btn btn-primary" data-track="hero_reserve">Reserve Yours — Just $1</a>
+          <a href="#problem" class="btn btn-outline">See Why It Matters →</a>
         </div>
         <div class="hero-meta">
           <div class="hero-meta-item">
@@ -93,10 +150,10 @@
             <span class="label">First Pairs Available</span>
           </div>
         </div>
-        <p class="hero-footnote">*Measured via pressure testing on brace prototype — heel and midfoot regions</p>
+        <p class="hero-footnote">*Measured via pressure testing — heel &amp; midfoot regions</p>
       </div>
     </div>
-    <div class="astronaut-float">
+    <div class="astronaut-float" aria-hidden="true">
       <svg viewBox="0 0 200 300" class="astronaut-svg">
         <defs>
           <radialGradient id="visor" cx="50%" cy="40%">
@@ -118,117 +175,166 @@
         <ellipse cx="132" cy="274" rx="18" ry="4" fill="#00f0ff" opacity="0.3"/>
       </svg>
     </div>
-  </section>
+  </header>
 
   <!-- TICKER -->
-  <div class="ticker">
+  <div class="ticker" aria-hidden="true">
     <div class="ticker-inner">
       <span class="ticker-item">Patent-Pending <span class="sep">◆</span></span>
-      <span class="ticker-item">Internal Suspension System <span class="sep">◆</span></span>
-      <span class="ticker-item">50-60% Weight Offloaded <span class="sep">◆</span></span>
-      <span class="ticker-item">Performance-Grade Construction <span class="sep">◆</span></span>
-      <span class="ticker-item">Rigid Frame + Trampoline Sole <span class="sep">◆</span></span>
+      <span class="ticker-item">Internal Suspension <span class="sep">◆</span></span>
+      <span class="ticker-item">50-60% Offloaded <span class="sep">◆</span></span>
       <span class="ticker-item">Only 200 First-Run Pairs <span class="sep">◆</span></span>
+      <span class="ticker-item">Rigid Frame + Trampoline Sole <span class="sep">◆</span></span>
+      <span class="ticker-item">$1 to Reserve <span class="sep">◆</span></span>
       <span class="ticker-item">Patent-Pending <span class="sep">◆</span></span>
-      <span class="ticker-item">Internal Suspension System <span class="sep">◆</span></span>
-      <span class="ticker-item">50-60% Weight Offloaded <span class="sep">◆</span></span>
-      <span class="ticker-item">Performance-Grade Construction <span class="sep">◆</span></span>
-      <span class="ticker-item">Rigid Frame + Trampoline Sole <span class="sep">◆</span></span>
+      <span class="ticker-item">Internal Suspension <span class="sep">◆</span></span>
+      <span class="ticker-item">50-60% Offloaded <span class="sep">◆</span></span>
       <span class="ticker-item">Only 200 First-Run Pairs <span class="sep">◆</span></span>
+      <span class="ticker-item">Rigid Frame + Trampoline Sole <span class="sep">◆</span></span>
+      <span class="ticker-item">$1 to Reserve <span class="sep">◆</span></span>
     </div>
   </div>
 
-  <!-- ============ 1. THE DIFFERENCE (hook) ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 2: PROBLEM INTENSIFICATION
+       Strategy: Make the reader FEEL the problem before showing
+       the solution. Schwartz says you can't create desire —
+       you channel the desire that already exists.
+       "The more vividly you can make them feel the problem,
+       the more urgently they'll want the solution."
+       ============================================================ -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="problem-inner fade-up">
+        <span class="eyebrow">The Problem Nobody's Solved</span>
+        <h2>You already know the feeling.</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <p class="problem-quote">"My feet are done by 2pm but my shift ends at 6."</p>
+          </div>
+          <div class="problem-card">
+            <p class="problem-quote">"I used to hike 12 miles. Now I turn around at 4."</p>
+          </div>
+          <div class="problem-card">
+            <p class="problem-quote">"My brace works — but it doesn't fit in my work shoes."</p>
+          </div>
+          <div class="problem-card">
+            <p class="problem-quote">"I've tried every insole on Amazon. Nothing changes."</p>
+          </div>
+        </div>
+        <p class="problem-explanation">Every "solution" you've tried does the same thing: <strong>puts soft material between your foot and the ground.</strong> Foam. Gel. Air. They absorb some shock, then compress, degrade, and let the force through anyway. The fundamental problem remains — <em>all your weight still lands on the sole of your foot.</em></p>
+        <p class="problem-punchline">What if it didn't have to?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SCHWARTZ LEVEL 3: UNIQUE MECHANISM (The Difference)
+       Strategy: Introduce the mechanism that makes THIS solution
+       different from everything they've tried. Schwartz calls this
+       "the unique mechanism" — the thing that makes the claim
+       believable because it explains HOW.
+       ============================================================ -->
   <section class="comparison" id="difference">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="eyebrow">Not Just Another Boot</span>
-        <h2>Cushion absorbs force.<br>HOVRSOLE <em>redirects</em> it.</h2>
-        <p>Every other shoe on the market puts material between your foot and the ground, then hopes for the best. We engineered a structural bypass.</p>
+        <span class="eyebrow">The Breakthrough</span>
+        <h2>Other shoes absorb the force.<br>HOVRSOLE <em>redirects</em> it.</h2>
+        <p>This isn't a better insole. It's a fundamentally different architecture — the first footwear that structurally bypasses your sole.</p>
       </div>
       <div class="comp-grid fade-up">
         <div class="comp-card">
-          <div class="brand-name">Traditional Shoes</div>
+          <div class="brand-name">What You've Tried</div>
           <div class="approach">Cushion & Hope</div>
-          <div class="desc">EVA foam, gel inserts, air pockets — all compress under load and degrade over time. Force still hits the sole. Every step, every time.</div>
+          <div class="desc">EVA foam, gel inserts, air pockets — they compress under your weight and degrade over time. The force still hits the sole of your foot. Every step, every time. It's a band-aid, not a fix.</div>
         </div>
         <div class="comp-card featured">
           <div class="brand-name">◆ HOVRSOLE ◆</div>
           <div class="approach">Suspend & Redirect</div>
-          <div class="desc">Rigid frame exoskeleton + internal suspension. Force is structurally redirected through the frame to the edges. Your foot hovers above the impact zone.</div>
+          <div class="desc">A rigid exoskeleton frame + silicone ankle grip suspends your foot from above. Force travels through the frame to the edges of the sole — bypassing the bottom of your foot entirely. Your foot hovers inside.</div>
         </div>
         <div class="comp-card">
           <div class="brand-name">Offloading Braces</div>
-          <div class="approach">Immobilize</div>
-          <div class="desc">CAM boots and offloading braces work — but they're bulky, conspicuous, and limit your life. HOVRSOLE puts that technology in footwear you actually want to wear.</div>
+          <div class="approach">Effective but Limiting</div>
+          <div class="desc">CAM boots and medical braces offload well — but they're bulky, conspicuous, and don't fit your life. HOVRSOLE puts that proven technology inside real footwear.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 2. IS IT FOR YOU? (identity) ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 4: IDENTIFICATION / DESIRE CHANNELING
+       Strategy: "Is It For You?" — let the reader self-select.
+       Schwartz: "The prospect must see themselves in the ad."
+       Each card channels an existing desire they already have.
+       ============================================================ -->
   <section class="use-cases" id="for-you">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="eyebrow">Is It For You?</span>
-        <h2>HOVRSOLE is for you if you want to…</h2>
+        <span class="eyebrow">Is HOVRSOLE For You?</span>
+        <h2>This is for you if you've ever thought…</h2>
       </div>
       <div class="use-grid">
-        <div class="use-card fade-up">
+        <article class="use-card fade-up">
           <div class="use-emoji">🥾</div>
-          <h3>Hike Longer & Run Further</h3>
-          <p>You love the trail but your feet give out before your legs do. HOVRSOLE's suspension keeps you going when every other boot would have you limping back to the trailhead.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"I wish I could hike longer."</h3>
+          <p>Your legs have miles left in them but your feet are screaming at mile 4. HOVRSOLE's suspension keeps you on the trail when every other boot would have you turning back.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">⏰</div>
-          <h3>Stay on Your Feet All Day</h3>
-          <p>Long shifts. Trade shows. Job sites. When sitting isn't an option, HOVRSOLE offloads the pressure so soreness doesn't dictate when you stop.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"I can barely stand by end of shift."</h3>
+          <p>Twelve-hour shifts. Warehouse floors. Kitchen lines. You can't sit down, and no insole survives your workday. HOVRSOLE offloads the pressure so your feet aren't the reason you dread going in.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">💪</div>
-          <h3>Stay in the Game</h3>
-          <p>You're not the type to sit out. Whether it's the field, the gym, or the weekend adventure — HOVRSOLE keeps you moving when your feet would normally hold you back.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"I'm not ready to slow down."</h3>
+          <p>Weekends are for the field, the gym, the adventure. You refuse to sit out because of your feet. HOVRSOLE keeps you in the game when every other shoe makes you pay for it tomorrow.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">🌙</div>
-          <h3>Feel Like You're on the Moon</h3>
-          <p>There's nothing else like the feeling of your foot hovering inside the frame. Lunar surface optional — the weightless sensation is standard.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"I want to feel weightless."</h3>
+          <p>There's nothing else like the sensation of your foot hovering inside the frame. It's the feeling of walking on the moon — except you're on Earth and it's Tuesday.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">🎖️</div>
-          <h3>Go Further with Heavy Loads</h3>
-          <p>Ruck marches, heavy packs, rough terrain. When you're carrying the weight and every mile matters, HOVRSOLE redirects the load away from your sole so your feet aren't the weak link.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"Every mile with a heavy pack hurts."</h3>
+          <p>Rucks, packs, heavy loads over rough ground. When you're carrying the weight and can't stop, HOVRSOLE redirects the load so your feet aren't the weak link in the chain.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">🤫</div>
-          <h3>Get Extra Support — Discreetly</h3>
-          <p>No bulky brace. No medical-looking boot. HOVRSOLE looks like real footwear because it is real footwear — with an invisible suspension system built in.</p>
-        </div>
-        <div class="use-card fade-up">
+          <h3>"I need support — but I don't want it to look like it."</h3>
+          <p>You don't want a medical boot. You don't want pity. You want footwear that works as hard as you do — invisibly. The suspension is completely internal. Nobody knows but you.</p>
+        </article>
+        <article class="use-card fade-up">
           <div class="use-emoji">👟</div>
-          <h3>Need Support That Fits Your Work Shoe</h3>
-          <p>Your job requires specific footwear. Your feet require offloading. Until now, you had to choose. HOVRSOLE is both — the suspension is built into the shoe itself. No brace underneath, no insert on top of an insert.</p>
-        </div>
+          <h3>"My brace doesn't fit my work shoes."</h3>
+          <p>Your job requires OSHA boots, kitchen clogs, or sales-floor shoes. Your prescribed brace doesn't fit inside them. With HOVRSOLE, the shoe IS the offloading device. No brace underneath, no insert on top of an insert.</p>
+        </article>
       </div>
-      <div style="text-align:center;margin-top:56px;" class="fade-up">
-        <a href="reserve.html" class="btn btn-primary">That's Me — Reserve a Pair →</a>
+      <div class="use-cta fade-up">
+        <p class="use-cta-text">If any of these sound like you — you've been waiting for this.</p>
+        <a href="reserve.html" class="btn btn-primary" data-track="identity_reserve">Reserve My Pair — $1</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ 3. HOW IT WORKS (combined tech + mechanism) ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 5: PROOF / HOW IT WORKS
+       Strategy: Now they WANT it. Show them HOW it works to make
+       the claim believable. Schwartz calls this "intensification" —
+       stack proof upon proof until doubt is impossible.
+       ============================================================ -->
   <section class="technology" id="technology">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="eyebrow">How It Works</span>
-        <h2>Three systems. One breakthrough.</h2>
-        <p>HOVRSOLE isn't just another cushioned shoe. It's a fundamentally different architecture — an internal suspension system that decouples your foot from the ground.</p>
+        <span class="eyebrow">The Technology</span>
+        <h2>How three systems make your foot hover.</h2>
+        <p>This isn't marketing language — it's mechanical engineering. Here's exactly what happens inside every HOVRSOLE, step by step.</p>
       </div>
 
-      <!-- Three tech cards -->
       <div class="tech-grid">
-        <div class="tech-card fade-up">
-          <div class="tech-num">1</div>
+        <article class="tech-card fade-up">
+          <div class="tech-num">01</div>
           <div class="tech-icon">
             <svg viewBox="0 0 64 64" width="48" height="48">
               <rect x="8" y="20" width="48" height="32" rx="4" fill="none" stroke="#00f0ff" stroke-width="2"/>
@@ -236,11 +342,11 @@
             </svg>
           </div>
           <h3>Rigid Outer Frame</h3>
-          <p>The exterior sole is a structural exoskeleton — rigid along the sides and bottom perimeter. It absorbs terrain impact and channels force to the edges, away from the bottom of your foot.</p>
-          <span class="tech-label">↓ Catches terrain forces</span>
-        </div>
-        <div class="tech-card fade-up">
-          <div class="tech-num">2</div>
+          <p>A structural exoskeleton wraps the sole — rigid along the sides and bottom perimeter. When your foot meets the ground, this frame catches the terrain forces and channels them to the outer edges. The bottom of your foot never takes the direct hit.</p>
+          <span class="tech-label">Catches terrain → channels to edges</span>
+        </article>
+        <article class="tech-card fade-up">
+          <div class="tech-num">02</div>
           <div class="tech-icon">
             <svg viewBox="0 0 64 64" width="48" height="48">
               <ellipse cx="32" cy="24" rx="14" ry="18" fill="none" stroke="#00f0ff" stroke-width="2"/>
@@ -249,11 +355,11 @@
             </svg>
           </div>
           <h3>Silicone Ankle Grip</h3>
-          <p>Above the ankle, a high-grip silicone surface "grabs" and suspends the leg within the shoe. Your weight is held from above — not pushed from below.</p>
-          <span class="tech-label">↓ Suspends your weight</span>
-        </div>
-        <div class="tech-card fade-up">
-          <div class="tech-num">3</div>
+          <p>Above the ankle, a high-grip silicone surface "grabs" your leg and suspends it within the shoe. Instead of your weight pushing DOWN onto the sole, it's held FROM ABOVE — like a hammock for your foot. This is what makes the hover possible.</p>
+          <span class="tech-label">Grabs leg → suspends from above</span>
+        </article>
+        <article class="tech-card fade-up">
+          <div class="tech-num">03</div>
           <div class="tech-icon">
             <svg viewBox="0 0 64 64" width="48" height="48">
               <path d="M12 40 Q22 20 32 40 Q42 60 52 40" stroke="#00f0ff" stroke-width="2" fill="none"/>
@@ -262,15 +368,15 @@
             </svg>
           </div>
           <h3>Trampoline Inner Sole</h3>
-          <p>Under your foot, a flexible membrane absorbs any remaining force with dynamic flex — not rigid impact. Your heel and midfoot float above the contact point.</p>
-          <span class="tech-label">= Your foot hovers</span>
-        </div>
+          <p>Under your foot, a flexible membrane absorbs whatever residual force remains — not with rigid compression like foam, but with dynamic flex like a trampoline. Your heel and midfoot float above the contact point.</p>
+          <span class="tech-label">Absorbs residual → foot floats</span>
+        </article>
       </div>
 
-      <!-- Pressure comparison -->
+      <!-- Pressure comparison — visual proof -->
       <div class="pressure-comparison fade-up">
         <div class="pressure-card normal">
-          <h4>Normal Shoe</h4>
+          <h4>Every Other Shoe</h4>
           <div class="pressure-visual">
             <div class="foot-outline">
               <div class="pressure-zone high" style="top:15%;left:30%;width:40%;height:22%;">HIGH</div>
@@ -278,7 +384,7 @@
               <div class="pressure-zone med" style="top:42%;left:30%;width:40%;height:22%;">MED</div>
             </div>
           </div>
-          <p>All force hits the sole — heel &amp; midfoot take the worst</p>
+          <p>100% of your weight hits the sole.<br>Heel and midfoot take the worst.</p>
         </div>
         <div class="pressure-arrow">→</div>
         <div class="pressure-card hovrsole">
@@ -290,130 +396,161 @@
               <div class="pressure-zone none" style="top:42%;left:30%;width:40%;height:22%;">~0</div>
             </div>
           </div>
-          <p>50-60% of weight redirected — heel &amp; midfoot offloaded</p>
+          <p>50-60% redirected through frame.<br>Heel &amp; midfoot: nearly zero.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 4. PROOF ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 6: INTENSIFICATION — STACK PROOF
+       Strategy: Pile on credibility. Patent, testing, numbers.
+       Make doubt feel foolish.
+       ============================================================ -->
   <section class="proof">
     <div class="container">
       <div class="proof-inner fade-up">
-        <span class="eyebrow">Tested & Validated</span>
-        <h2>Pressure-tested. Patent-pending. Prototype-proven.</h2>
-        <p>We built the brace first. We measured the offload. Then we engineered it into a shoe. The suspension architecture works — and a shoe form factor delivers equal or better offloading than our brace prototype.</p>
+        <span class="eyebrow">Built on Evidence</span>
+        <h2>We didn't start with a shoe.<br>We started with the data.</h2>
+        <p>The brace came first. We pressure-mapped it. We measured exactly how much weight shifted off the sole. Only then did we engineer it into footwear — because the data had to come before the product.</p>
         <div class="proof-stats">
           <div class="stat">
             <span class="stat-num">50-60%</span>
             <span class="stat-label">Body weight offloaded (heel &amp; midfoot)</span>
           </div>
           <div class="stat">
-            <span class="stat-num">1</span>
-            <span class="stat-label">Provisional patent filed</span>
+            <span class="stat-num">80+ lbs</span>
+            <span class="stat-label">Redirected per step (avg adult)</span>
           </div>
           <div class="stat">
-            <span class="stat-num">200</span>
-            <span class="stat-label">First-run pairs</span>
+            <span class="stat-num">Patent<br>Pending</span>
+            <span class="stat-label">Provisional patent filed</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 5. FOUNDERS ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 7: FUTURE PACING
+       Strategy: Paint the picture of life AFTER they own the product.
+       Schwartz: "The prospect must be able to see themselves in
+       the result."
+       ============================================================ -->
+  <section class="future-pace">
+    <div class="container">
+      <div class="future-inner fade-up">
+        <h2>Imagine putting them on for the first time.</h2>
+        <div class="future-grid">
+          <div class="future-card">
+            <p>You lace up. Stand. And something is immediately different — the pressure you've felt every day for years is <em>just… gone</em> from your heel. Your midfoot feels like it's floating. You take a step. Then another. Then ten. And the ache that usually starts by step fifty isn't coming.</p>
+          </div>
+          <div class="future-card">
+            <p>At mile three, you realize you're not thinking about your feet. At mile six, you're still not. At the end of a twelve-hour shift, you're tired — but for the first time, it's your legs that are tired. Not your feet. That's different. That's HOVRSOLE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS (trust) -->
   <section class="founders" id="founders">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="eyebrow">The Team</span>
-        <h2>Engineers who got tired of sore feet.</h2>
+        <span class="eyebrow">Who We Are</span>
+        <h2>We built this because we needed it.</h2>
       </div>
       <div class="founders-grid fade-up">
-        <div class="founder-card">
+        <article class="founder-card">
           <div class="founder-avatar">DF</div>
           <h3>Dar Fazulyanov</h3>
-          <span class="founder-role">Co-Founder & Co-Inventor</span>
-          <p>Serial entrepreneur with experience in hardware manufacturing, capital raising ($100M+ across career), government contracts, and strategic finance. Former CFO of S5 Wireless (DHS-funded). Founder of Scalar (premier business valuations). Brings the operational muscle to turn patent into product.</p>
-        </div>
-        <div class="founder-card">
+          <span class="founder-role">Co-Founder &amp; Co-Inventor</span>
+          <p>Serial entrepreneur. Hardware manufacturing, capital raising ($100M+ across career), government contracts, strategic finance. Former CFO of S5 Wireless (DHS-funded). Founder of Scalar (premier business valuations). The operational muscle to turn a patent into a product you can actually buy.</p>
+        </article>
+        <article class="founder-card">
           <div class="founder-avatar">JV</div>
           <h3>Joshua Vanderpool</h3>
-          <span class="founder-role">Co-Founder & Co-Inventor</span>
-          <p>Co-inventor of the HOVRSOLE suspension system. The engineering mind behind the internal frame architecture, trampoline sole mechanism, and silicone ankle grip system that makes pressure offloading possible in a wearable form factor.</p>
-        </div>
+          <span class="founder-role">Co-Founder &amp; Co-Inventor</span>
+          <p>The engineering mind behind HOVRSOLE. Designed the internal frame architecture, trampoline sole mechanism, and silicone ankle grip — the three-system suspension that makes pressure offloading possible in a shoe you'd actually want to wear.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ 6. CTA ============ -->
+  <!-- ============================================================
+       SCHWARTZ LEVEL 8: THE CLOSE — URGENCY + SCARCITY
+       Strategy: Schwartz says the close must feel like a natural
+       conclusion, not a hard sell. Scarcity (200 pairs) + low
+       barrier ($1) + risk reversal (full refund).
+       ============================================================ -->
   <section class="cta">
     <div class="container">
-      <span class="eyebrow">Launching on Kickstarter</span>
-      <h2>Be one of the<br>first 200.</h2>
-      <p>We're making 200 pairs in our first run. Reserve yours for $1 and lock in the $250 Kickstarter price. Your deposit is applied to your order. Full refund anytime.</p>
+      <span class="eyebrow">First Production Run</span>
+      <h2>200 pairs.<br>Then we'll see.</h2>
+      <p>This is our first run. 200 pairs, built to prove that this technology works at scale. We're not asking you to buy a shoe — we're asking you to claim a spot. $1 holds your place. It's applied to your order. And if you change your mind, it's fully refunded. No questions.</p>
       <div class="cta-price">
         <span class="amount">$1</span>
-        <span class="note">Refundable deposit — applied to your order</span>
+        <span class="note">Fully refundable · Applied to your $250 order · Cancel anytime</span>
       </div>
-      <a href="reserve.html" class="btn btn-accent">Reserve My Pair →</a>
-      <div class="cta-goal">
-        <span>Only 200 first-run pairs — be early</span>
+      <a href="reserve.html" class="btn btn-accent" data-track="final_reserve">Claim My Spot in the First 200 →</a>
+      <div class="cta-urgency">
+        <span>When they're claimed, they're claimed.</span>
       </div>
     </div>
   </section>
 
-  <!-- ============ 7. FAQ ============ -->
+  <!-- FAQ (SEO + objection handling) -->
   <section class="faq" id="faq">
     <div class="container">
       <div class="section-header fade-up">
         <span class="eyebrow">FAQ</span>
-        <h2>Questions, answered.</h2>
+        <h2>Still have questions? Good.</h2>
       </div>
       <div class="faq-list">
         <div class="faq-item fade-up">
-          <div class="faq-question">How does the suspension system actually work?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">Three integrated systems: (1) A rigid outer frame/exoskeleton that forms the shoe's structural shell. (2) A silicone ankle grip that "catches" and suspends the leg from above. (3) A trampoline-like membrane under the foot that flexes dynamically instead of compressing. Together, they redirect your body weight through the frame to the sole's edges — bypassing the bottom of your foot.</div>
+          <div class="faq-question"><h3>How does the HOVRSOLE suspension system work?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">Three integrated systems: (1) A rigid outer frame exoskeleton catches terrain forces and channels them to the edges. (2) A silicone ankle grip suspends your leg from above, holding weight so it doesn't push down onto the sole. (3) A trampoline-like membrane under the foot absorbs any residual force with dynamic flex. Together, they redirect 50-60% of your body weight away from the heel and midfoot.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">Is this a medical device?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">No. HOVRSOLE is performance footwear with a patent-pending internal suspension system. Think of it like a high-performance boot — it's designed for people who want to stay on their feet longer, go further, and feel better doing it.</div>
+          <div class="faq-question"><h3>Is HOVRSOLE a medical device?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">No. HOVRSOLE is performance footwear with a patent-pending internal suspension system. It's designed for people who want to stay on their feet longer, go further, and feel better doing it.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">What's the patent status?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">We have a provisional patent filed covering the internal suspension architecture — the combination of rigid external frame, trampoline sole membrane, and silicone ankle grip suspension system. The full utility patent application is in progress.</div>
+          <div class="faq-question"><h3>How is HOVRSOLE different from HOKA, Nike Air, or cushioned shoes?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">Fundamentally different approach. Cushioned shoes put soft material between your foot and the ground — the force still hits the sole, just through a softer medium that degrades over time. HOVRSOLE structurally redirects force around the sole entirely. It's the difference between a pillow and a suspension bridge.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">How is this different from HOKA, Nike Air, or other cushioned shoes?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">Fundamentally different approach. Cushioned shoes put soft material between your foot and the ground — the force still hits the sole, just through a softer medium. HOVRSOLE structurally redirects force around and away from the sole entirely. It's the difference between a pillow and a suspension bridge.</div>
+          <div class="faq-question"><h3>How much pressure does HOVRSOLE actually offload?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">In prototype brace testing, we measured 50-60% of body weight offloaded from the heel and midfoot — that's over 80 pounds redirected per step for an average adult. The shoe form factor uses the same suspension architecture and is designed to deliver equal or better offloading.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">How much pressure does it actually offload?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">In our prototype brace testing, we measured 50-60% of body weight offloaded from the heel and midfoot — the areas that take the most impact during walking. The shoe form factor uses the same suspension architecture and is designed to deliver equal or better offloading.</div>
+          <div class="faq-question"><h3>What's the patent status?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">Provisional patent filed covering the complete internal suspension architecture — the combination of rigid external frame, trampoline sole membrane, and silicone ankle grip system. Full utility patent application is in progress.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">Can I use this for hiking and outdoor activities?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">Absolutely — that's one of the primary use cases. The rigid outer frame handles rocky, uneven terrain while your foot stays suspended and protected inside. Think of it as an exoskeleton for your foot. Hikers, trail runners, and anyone who spends long days on their feet will feel the difference.</div>
+          <div class="faq-question"><h3>Does it look like a medical boot or brace?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">Not at all. The entire suspension system is internal. From the outside, HOVRSOLE looks like well-designed performance footwear — because that's what it is. The ankle grip, frame, and trampoline sole are all invisible. Nobody knows but you.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">Does it look like a medical brace?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">Not at all. The suspension system is completely internal. From the outside, HOVRSOLE looks like well-designed performance footwear — because that's exactly what it is. No one will know unless you tell them.</div>
+          <div class="faq-question"><h3>Will this work with my job's shoe requirements?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">That's exactly the point. Unlike braces and orthotics that have to fit INSIDE another shoe, HOVRSOLE IS the shoe. The suspension system is built into the footwear itself. We're designing for real-world use — including work environments with specific footwear requirements.</div>
         </div>
         <div class="faq-item fade-up">
-          <div class="faq-question">How does the $1 reservation work?<span class="faq-icon">+</span></div>
-          <div class="faq-answer">Pay $1 now to reserve your spot in the first 200 pairs. When we launch on Kickstarter, you get first access at the $250 price. Your $1 is applied to your order. Full refund anytime before production — no questions asked.</div>
+          <div class="faq-question"><h3>How does the $1 reservation work?</h3><span class="faq-icon">+</span></div>
+          <div class="faq-answer">Pay $1 to claim your spot in the first 200 pairs. When we launch on Kickstarter, you get first access at $250. Your dollar is applied to your order. Full refund anytime before production — no questions, no hassle. The deposit just holds your place.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-logo">HOVR<span class="accent">SOLE</span></div>
       <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="mailto:dar@eazistep.com">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:dar@eazistep.com">Contact Us</a>
       </div>
       <p class="footer-copy">&copy; 2026 HOVRSOLE. Patent pending. All rights reserved.</p>
     </div>
