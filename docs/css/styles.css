@@ -351,7 +351,7 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
   background: var(--dark);
 }
 .use-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
 }
 .use-card {
   background: var(--dark-2); padding: clamp(28px, 3vw, 44px);
